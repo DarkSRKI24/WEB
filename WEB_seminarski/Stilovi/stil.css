@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff
+}
+
+/* Fontovi */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap');
+@font-face {
+    font-family: Oswald-Offline;
+    src: url(../Fontovi/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Montserrat-Offline;
+    src: url(../Fontovi/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* scrollbar/slijder sa codepen-a (https://codepen.io/GhostRider/pen/oNvoNv) */
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+
+/* scrollbar/slijder sa codepen-a:end */
+
+
+.mx-auto {
+    margin: auto;
+} /* mozda zatreba */
+
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 0.25rem solid #000000;
+    z-index: 999;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+header:hover {
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    width: 5rem;
+}
+
+.nav-list, .nav-item a, .foot-list, .foot-item a {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', Oswald-Offline, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+/* Podvlacenje teksta - codepen (https://codepen.io/argyleink/details/poEjvpd) */
+
+.highlight {
+    position: relative;
+    transition: color .3s ease;
+}
+
+.highlight:hover {
+    color: #ffffff;
+}
+
+.highlight::before {  
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.highlight:hover::before {
+    transform: scaleY(1);
+    transform-origin: top center;
+}
+
+.highlight::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 -0.25em 0 -0.25em;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+/* Podvlacenje teksta - codepen:end */
+
+.nav-item:first-child {
+    margin-right: auto;
+}
+
+.nav-item:first-child span {
+    width: 15rem;
+    margin-right: auto;
+    margin-left: 0.5rem;
+    color: #000000;
+    font-family: 'Montserrat', Montserrat-Offline, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 0.25rem solid #000000;
+}
+
+.foot-item {
+    list-style: none;
+    margin-right: 0.5rem;
+}
+
+.foot-item:first-child {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', Oswald-Offline, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-right: auto;
+}
+
+.foot-item a svg {
+    height: 2rem;
+}
