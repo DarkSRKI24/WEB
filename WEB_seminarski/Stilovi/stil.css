@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffffff
+#particles-js {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
 }
 
 /* Fontovi */
@@ -42,9 +46,13 @@ body {
 /* scrollbar/slijder sa codepen-a:end */
 
 
-.mx-auto {
-    margin: auto;
-} /* mozda zatreba */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 header {
     position: sticky;
@@ -55,6 +63,54 @@ header {
     transition: 0.3s;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+.nav-menu, .nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-item:last-child {
+    margin-right: 1rem;
+}
+
+.nav-item a {
+    padding: 0.5rem;
+}
+
+.nav-link {
+    color: #000000;
+    font-family: 'Oswald', Oswald-Offline, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
 header:hover {
     box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.5);
 }
@@ -63,67 +119,11 @@ header:hover {
     width: 5rem;
 }
 
-.nav-list, .nav-item a, .foot-list, .foot-item a {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav-item {
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Oswald', Oswald-Offline, sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    cursor: pointer;
-}
 
 
-/* Podvlacenje teksta - codepen (https://codepen.io/argyleink/details/poEjvpd) */
-
-.highlight {
-    position: relative;
-    transition: color .3s ease;
-}
-
-.highlight:hover {
-    color: #ffffff;
-}
-
-.highlight::before {  
-    transform: scaleY(0);
-    transform-origin: top center;
-}
-
-.highlight:hover::before {
-    transform: scaleY(1);
-    transform-origin: top center;
-}
-
-.highlight::before {
-    content: " ";
+.nav-logo span {
     display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 -0.25em 0 -0.25em;
-    background: rgb(0, 0, 0);
-    z-index: -1;
-    transition: transform .3s ease;
-}
-
-/* Podvlacenje teksta - codepen:end */
-
-.nav-item:first-child {
-    margin-right: auto;
-}
-
-.nav-item:first-child span {
+    float: right;
     width: 15rem;
     margin-right: auto;
     margin-left: 0.5rem;
@@ -133,9 +133,54 @@ header:hover {
     font-weight: 500;
 }
 
+/* Podvlacenje teksta - codepen (https://codepen.io/argyleink/details/poEjvpd) */
+@media screen and (min-width: 769px) {
+
+    .highlight {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .highlight:hover {
+        color: #ffffff;
+    }
+
+    .highlight::before {  
+        transform: scaleY(0);
+        transform-origin: top center;
+    }
+
+    .highlight:hover::before {
+        transform: scaleY(1);
+        transform-origin: top center;
+    }
+
+    .highlight::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        inset: 0 -0.25em 0 -0.25em;
+        background: rgb(0, 0, 0);
+        z-index: -1;
+        transition: transform 0.3s ease;
+    }
+}
+/* Podvlacenje teksta - codepen:end */
+
+
+
 footer {
-    background-color: #ffffff;
+    background-color:#ffffff !important;
     border-top: 0.25rem solid #000000;
+    position: relative;
+}
+
+.foot-list, .foot-item a {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .foot-item {
@@ -147,11 +192,103 @@ footer {
     text-decoration: none;
     color: #000000;
     font-family: 'Oswald', Oswald-Offline, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 300;
     margin-right: auto;
 }
 
 .foot-item a svg {
-    height: 2rem;
+    height: 2em;
+}
+
+
+/* TABLET prikaz - HAMBURGER menu */
+@media screen and (max-width: 768px) {
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 6.15rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: auto 0;
+        padding: 2.5rem 0;
+        width: 100%;
+        border-bottom: 0.25rem solid #000000;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+    header:hover {
+        box-shadow: none;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        display: block;
+    }
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+/* MOBILNI prikaz */
+@media screen and (max-width: 425px) {
+
+    .nav-menu {
+        top: 4.25rem;
+    }
+
+    .foot-item {
+        margin-right: 0;
+    }
+
+    .foot-item:first-child {
+        font-size: .75em;
+    }
+
+    .foot-item a svg {
+        height: 1em;
+    }
+
+    .nav-logo span {
+        width: 9rem;
+        font-size: 1.2rem;
+    }
+
+    #logo {
+        width: 2.5rem;
+    }
+    
 }

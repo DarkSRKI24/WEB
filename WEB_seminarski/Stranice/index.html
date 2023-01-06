@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Slike/Ikonica.svg">
     <link rel="stylesheet" href="../Stilovi/stil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
 
@@ -11,28 +12,32 @@
     <title>BMTH</title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <header>
         <nav>
-            <ul class="nav-list">
+            <a class="nav-logo" href="../Stranice/index.html">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 909.85 865.54"><polyline points="454.79 432.77 104.79 601.92 362.95 388.08 454.79 56.26 546.63 388.38 804.79 601.92 454.79 432.77" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:30px"/><polyline points="454.79 432.77 104.79 263.61 362.95 477.4 454.79 809.28 546.63 477.15 804.79 263.61 454.79 432.77" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:30px"/></svg>
+                <span>BRING ME THE HORIZON</span>
+            </a>
+            <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../Stranice/index.html">
-                        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 909.85 865.54"><polyline points="454.79 432.77 104.79 601.92 362.95 388.08 454.79 56.26 546.63 388.38 804.79 601.92 454.79 432.77" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:30px"/><polyline points="454.79 432.77 104.79 263.61 362.95 477.4 454.79 809.28 546.63 477.15 804.79 263.61 454.79 432.77" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:30px"/></svg>
-                        <span>BRING ME THE HORIZON</span>
-                    </a>
+                    <a href="#" class="nav-link highlight">ALBUMI</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#"><span class="highlight">ALBUMI</span></a>
+                    <a href="#" class="nav-link highlight">REZERVACIJE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#"><span class="highlight">REZERVACIJE</span></a>
+                    <a href="#" class="nav-link highlight">PRODAVNICA</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#"><span class="highlight">PRODAVNICA</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"><span class="highlight">O NAMA</span></a>
+                    <a href="#" class="nav-link highlight">O NAMA</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -40,19 +45,22 @@
             <img id="hero-image" src="../Slike/Hero Image.jpg" alt="Hero Slika">
             <img  id="hero-logo"src="../Slike/Hero Logo.svg" alt="Bring Me The Horizon">
         </div>
-        <section class="flexbox-section">
+        <section>
             <h2>Najnoviji hit: </h2>
-            <video src="../Video/Bring Me The Horizon  Shadow Moses Official Video.mp4" controls loop width="60%"></video>
-             <!-- youtube iframe-embed, kao share opcija, ne radi na OVOM SPECIFIČNOM videu, valjda zbog copyright-a (https://youtu.be/-k9qDxyxS3s), tj. radi ali se prikazuje kao unavailable -->
+            <div class="flexbox-section">
+            <video src="../Video/Bring Me The Horizon x Jeris Johnson  Can You Feel My Heart Remix Official Audio_1080p.mp4" controls loop width="60%"></video>
+             <!-- youtube iframe-embed, kao share opcija, ne radi na OVOM SPECIFIČNOM videu, valjda zbog copyright-a (https://support.google.com/youtube/answer/6301625?hl=en), tj. radi ali se prikazuje kao unavailable -->
+            </div>
         </section>
-        <section class="flexbox-section">
+        <section>
             <h2>Članovi benda: </h2>
+            <div class="flexbox-section">
             <article class="item1">
                 <img src="../Slike/Oliver Sykes.jpg" alt="Oliver Sykes">
                 <div class="band-member">
-                    <h3>Oliver Sykes</h3>
+                    <h3>Oliver Sykess</h3>
                     <p>Lead vocals (2004–present); <br>Keyboards, programming (2004–2012)</p>
-                    <a href="https://www.google.com/search?q=oliver%20syeks" target="_blank">Learn more &#187;</a>
+                    <a href="https://www.google.com/search?q=bmth%20oliver%20sykes" target="_blank">Learn more &#187;</a>
                 </div>
             </article>
             <article class="item2">
@@ -60,7 +68,7 @@
                 <div class="band-member">
                     <h3>Lee Malia</h3>
                     <p>Bass (2004–present)</p>
-                    <a href="https://www.google.com/search?q=lee%20malia" target="_blank">Learn more &#187;</a>
+                    <a href="https://www.google.com/search?q=bmth%20lee%20malia" target="_blank">Learn more &#187;</a>
                 </div>
             </article>
             <article class="item3">
@@ -68,7 +76,7 @@
                 <div class="band-member">
                     <h3>Matt Kean</h3>
                     <p>Lead guitar (2004–present); <br>Rhythm guitar (2013–present)</p>
-                    <a href="https://www.google.com/search?q=matt%20kean" target="_blank">Learn more &#187;</a>
+                    <a href="https://www.google.com/search?q=bmth%20matt%20kean" target="_blank">Learn more &#187;</a>
                 </div>
             </article>
             <article class="item4">
@@ -76,7 +84,7 @@
                 <div class="band-member">
                     <h3>Matt Nicholls</h3>
                     <p>Drums (2004–present)</p>
-                    <a href="https://www.google.com/search?q=matt%20nicholls" target="_blank">Learn more &#187;</a>
+                    <a href="https://www.google.com/search?q=bmth%20matt%20nicholls" target="_blank">Learn more &#187;</a>
                 </div>
             </article>
             <article class="item5">
@@ -84,9 +92,10 @@
                 <div class="band-member">
                     <h3>Jordan Fish</h3>
                     <p>Keyboards, programming, drum pads, percussion, backing vocals (2012–present)</p>
-                    <a href="https://www.google.com/search?q=jordan%20fish" target="_blank">Learn more &#187;</a>
+                    <a href="https://www.google.com/search?q=bmth%20jordan%20fish" target="_blank">Learn more &#187;</a>
                 </div>
             </article>
+            </div>
         </section>
     </main>
     <footer>
@@ -114,5 +123,8 @@
             </li>
         </ul>
     </footer>
+    <script src="../Skripte/hamburger.js"></script>
+    <script src="../Skripte/particles.js"></script>
+    <script src="../Skripte/app.js"></script>
 </body>
 </html>

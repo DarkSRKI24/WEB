@@ -27,13 +27,12 @@
 }
 
 section {
-    margin: 10em auto;
-    row-gap: 2em;
+    margin: 10rem auto;
+    row-gap: 2rem;
     flex-wrap: wrap;
 }
 
 section h2 {
-    width: 100%;
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
     letter-spacing: .5rem;
     font-size: 5rem;
@@ -41,12 +40,14 @@ section h2 {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
+    z-index: 1;
 }
 
 section video {
     border:  0.25rem solid #000000;
     box-sizing: content-box;
-    display: block;
+    z-index: 1;
+    width: 60%;
 }
 
 .flexbox-section {
@@ -61,8 +62,8 @@ article {
     position: relative;
     display: grid;
     background-color: #ffffff;
-    height: 30em;
-    width: 35em;
+    height: 30rem;
+    width: 30rem;
     display: block;
     border: 0.25rem solid #000000;
 }
@@ -120,14 +121,14 @@ div.band-member a:hover {
 
 .band-member h3 {
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
-    font-size: 300%;
+    font-size: 3.15rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
 .band-member p {
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 2rem;
 }
@@ -136,11 +137,54 @@ div.band-member a:hover {
     text-decoration: none;
     color: #000000;
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: 300;
     transition: 0.3s;
 }
 
 .band-member {
     transition: text-decoration 0.3s;
+}
+
+/* TABLET prikaz */
+@media screen and (max-width: 768px) {
+
+    section {
+        margin: 4rem auto;
+    }
+
+    section video{
+        width: 92%;
+    }
+
+    #hero-logo {
+        filter: opacity(1);
+    }
+
+    article {
+        width: 20rem;
+    }
+
+    .band-member h3{
+        font-size: 1.9rem;
+    }
+
+    .band-member a {
+        font-size: 1.1rem;
+    }
+    
+}
+
+
+/* MOBILNI prikaz */
+@media screen and (max-width: 425px) {
+
+    section {
+        margin: 2rem auto;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+    
 }
