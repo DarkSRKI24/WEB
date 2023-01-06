@@ -208,7 +208,7 @@ footer {
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 6rem;
+        top: 6.15rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -267,7 +267,7 @@ footer {
 @media screen and (max-width: 425px) {
 
     .nav-menu {
-        top: 4.25rem;
+        top: 4.2rem;
     }
 
     .foot-item {
