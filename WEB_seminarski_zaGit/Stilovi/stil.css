@@ -262,6 +262,10 @@ footer {
         border-bottom: 0.25rem solid #000000;
         margin: 0;
     }
+	
+    .nav-item:first-child {
+        border-top: 0.25rem solid #000000;
+    }
 
     .hamburger {
         display: block;
