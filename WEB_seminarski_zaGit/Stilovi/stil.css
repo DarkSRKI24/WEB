@@ -249,7 +249,7 @@ footer {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.7);
         overflow-y: auto;
-        max-height: calc(100%- 5.25rem);
+        height: calc(100%- 5.25rem);
     }
 
     .nav-menu.active {
@@ -262,7 +262,7 @@ footer {
         border-bottom: 0.25rem solid #000000;
         margin: 0;
     }
-	
+
     .nav-item:first-child {
         border-top: 0.25rem solid #000000;
     }
@@ -309,6 +309,7 @@ footer {
 
     .nav-menu {
         top: 4.15rem;
+        height: calc(100%- 4.15rem);
     }
 
     .foot-item {
