@@ -1,0 +1,158 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 5rem 0;
+    width: 60%;
+}
+
+section h2 {
+    font-family: 'Montserrat', Montserrat-Offline, sans-serif;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section form h3 {
+    font-size: 2.15rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+section form {
+    border: 0.25rem solid #000000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    
+    font-family: 'Montserrat', Montserrat-Offline, sans-serif;
+    font-size: 3.15rem;
+    font-weight: 500;
+}
+
+section form span {
+    color: #ff0000;
+}
+
+
+textarea {
+    resize: none;
+}
+
+section form input, section form select {
+    text-align: center;
+}
+
+main section form h3 {
+    margin-top: 3rem;
+}
+
+main section form label:nth-child(2){ 
+    margin-top: 5rem;
+}
+
+section form label {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+section form input[type="text"] {
+    text-transform: capitalize;
+}
+
+section form input, section form select, section form textarea {
+    padding: 0.5rem;
+    border: 0.25rem solid #000000;
+    width: 90%;
+    font-family: 'Oswald', Oswald-Offline, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+section form input[type="submit"] {
+    width: 40%;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+section form input[type="submit"]:hover {
+    width: 90%;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
+@media screen and (max-width: 1024px) {
+    
+    section form {
+        font-size: 3rem;
+    }
+
+    section form input, section form select, section form textarea {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* TABLET prikaz */
+@media screen and (max-width: 768px) {
+
+    section {
+        width: 90%;
+    }
+
+    section form input[type="submit"] {
+        width: 55%;
+    }
+
+    section h2 {
+        font-size: 4rem;
+    }
+
+}
+
+/* MOBILNI prikaz */
+@media screen and (max-width: 425px) {
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    section form h3 {
+        font-size: 1.25rem;
+    }
+
+    section form {
+        font-size: 1.5rem;
+    }
+
+    section form input, section form select, section form textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Galaxy Fold  */
+@media screen and (max-width: 280px) {
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    section form input, section form select, section form textarea {
+        font-size: 0.75rem;
+    }
+}
