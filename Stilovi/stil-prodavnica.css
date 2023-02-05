@@ -1,0 +1,222 @@
+section {
+    margin: 5rem auto;
+}
+
+section h2 {
+    font-family: 'Montserrat', Montserrat-Offline, sans-serif;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem; /*  OPREZ   */
+    z-index: 1;
+}
+
+.wrapper-section {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.wrapper-img {
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    border: 0.25rem solid #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* MORA OVAKO ZBOG HOVER STANJA */
+.wrapper-inner-img {
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    transition: 0.5s ease-in-out;
+}
+/* MORA OVAKO ZBOG HOVER STANJA:end */
+
+
+.wrapper-img a {
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+
+
+.slika1-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/1_2.webp);
+}
+
+.slika1-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/1_1.webp);
+}
+
+.slika1-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika2-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/2_2.webp);
+}
+
+.slika2-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/2_1.webp);
+}
+
+.slika2-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika3-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/3_2.webp);
+}
+
+.slika3-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/3_1.webp);
+}
+
+.slika3-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika4-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/4_2.webp);
+}
+
+.slika4-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/4_1.webp);
+}
+
+.slika4-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika5-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/5_2.webp);
+}
+
+.slika5-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/5_1.webp);
+}
+
+.slika5-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika6-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/6_2.webp);
+}
+
+.slika6-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/6_1.webp);
+}
+
+.slika6-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika7-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/7_2.webp);
+}
+
+.slika7-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/7_1.webp);
+}
+
+.slika7-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika8-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/8_2.webp);
+}
+
+.slika8-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/8_1.webp);
+}
+
+.slika8-2:hover{
+    opacity: 0;
+}
+
+
+
+.slika9-1{
+    background-image: url(../Slike/Slike_za_prodavnicu/9_2.webp);
+}
+
+.slika9-2{
+    background-image: url(../Slike/Slike_za_prodavnicu/9_1.webp);
+}
+
+.slika9-2:hover{
+    opacity: 0;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) {
+
+    .wrapper-img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+}
+
+
+/* MOBILNI-VELIKI */
+
+@media screen and (max-width: 425px) {
+
+    .wrapper-img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    section h2 {
+        font-size: 2.25rem;
+    }
+
+}
+
+/* MOBILNI-MALI */
+
+@media screen and (max-width: 320px) {
+
+    .wrapper-img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+}

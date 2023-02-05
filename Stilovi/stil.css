@@ -33,7 +33,7 @@ main {
 }
 
 
-/* scrollbar/slijder sa codepen-a (https://codepen.io/GhostRider/pen/oNvoNv) */
+/* scrollbar */
 
 ::-webkit-scrollbar-track
 {
@@ -52,7 +52,7 @@ main {
 	background-color: #000000;	
 }
 
-/* scrollbar/slijder sa codepen-a:end */
+/* scrollbar:end */
 
 
 li {
@@ -142,7 +142,7 @@ header:hover {
     font-weight: 500;
 }
 
-/* Podvlacenje teksta - codepen (https://codepen.io/argyleink/details/poEjvpd) */
+/* Podvlacenje teksta */
 @media screen and (min-width: 769px) {
 
     .highlight {
@@ -175,7 +175,7 @@ header:hover {
         transition: transform 0.3s ease;
     }
 }
-/* Podvlacenje teksta - codepen:end */
+/* Podvlacenje teksta:end */
 
 
 footer {
@@ -196,6 +196,10 @@ footer {
 .foot-item {
     list-style: none;
     margin-right: 0.5rem;
+}
+
+.foot-item:last-child {
+    margin-right: 0;
 }
 
 .foot-item:first-child {
@@ -221,7 +225,7 @@ footer {
     }
     
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         font-weight: 300;
     }
 
@@ -355,4 +359,3 @@ footer {
     }
 
 }
-

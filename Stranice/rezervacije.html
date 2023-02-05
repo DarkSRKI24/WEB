@@ -22,13 +22,13 @@
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link highlight">ALBUMI</a>
+                    <a href="albumi.html" class="nav-link highlight">ALBUMI</a>
                 </li>
                 <li class="nav-item">
                     <a href="rezervacije.html" class="nav-link highlight">REZERVACIJE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.horizonsupply.co/" target="_blank" class="nav-link highlight">PRODAVNICA</a>
+                    <a href="prodavnica.html" class="nav-link highlight">PRODAVNICA</a>
                 </li>
                 <li class="nav-item">
                     <a href="oNama.html" class="nav-link highlight">O NAMA</a>
@@ -43,16 +43,16 @@
     </header>
     <main>
         <section>
-            <h2>REZERVACIJA KARATA: </h2>
+            <h2>REZERVACIJA KARATA</h2>
             <form>
                 <h3>Ovde možete rezervisati karte za predstojeći koncert; <br>polja sa crvenom zvezdicom (<span> * </span>) su obavezna. </h3>
-                <label for="ime" id="selektujME">Ime </label>
+                <label for="ime" id="selektujME">Ime</label>
                 <input name="ime" id="ime" type="text" placeholder="Vaše Ime">
 
-                <label for="prezime">Prezime </label>
+                <label for="prezime">Prezime</label>
                 <input name="prezime" id="prezime" type="text" placeholder="Vaše Prezime">
 
-                <label for="email-adresa">e-mail adresa <span>*</span></label>
+                <label for="email-adresa">e-mail adresa<span>*</span></label>
                 <input name="email-adresa" id="email-adresa" type="email" placeholder="Vaša e-mail adresa: " required>
 
                 <label for="telefon">Broj telefona <span>*</span></label>
@@ -60,6 +60,7 @@
 
                 <label for="grad">Grad <span>*</span></label>
                 <select name="grad" id="grad" required>
+                    <option value="">Izaberi grad</option>
                     <option value="ns">Novi Sad</option>
                     <option value="su">Subotica</option>
                     <option value="bg">Beograd</option>
@@ -68,8 +69,8 @@
                 <label for="datum">Datum rezervacije <span>*</span></label>
                 <input name="datum" id="datum" type="date" min="2023-07-06" max="2023-07-09" required>
 
-                <label for="poruka">Poruka </label>
-                <textarea name="poruka" id="poruka" rows="6" placeholder="Ako vam je još nešto potrebno, možete nam ostaviti poruku ovde...😏😉😉"></textarea>
+                <label for="poruka">Poruka</label>
+                <textarea name="poruka" id="poruka" rows="6" placeholder="Ako vam je još nešto potrebno, možete nam ostaviti poruku ovde..."></textarea>
 
                 <input type="submit" value="Potvrdi rezervaciju">
             </form>

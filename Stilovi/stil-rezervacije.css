@@ -5,7 +5,7 @@ main {
 }
 
 section {
-    margin: 5rem 0;
+    margin: 5rem auto;
     width: 60%;
 }
 
@@ -20,6 +20,7 @@ section h2 {
 }
 
 section form h3 {
+    padding: 0.25rem;
     font-size: 2.15rem;
     font-weight: 500;
     text-align: center;
@@ -95,9 +96,24 @@ section form input[type="submit"]:hover {
     background-color: #000000;
 }
 
+
+/* Ispravka responzivnosti - DESKTOP */
+@media screen and (max-width: 1124px) {
+
+    section h2 {
+        font-size: 4rem;
+    }
+
+}
+
+
 /* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
 @media screen and (max-width: 1024px) {
     
+    section h2 {
+        font-size: 3.25rem;
+    }
+
     section form {
         font-size: 3rem;
     }
@@ -120,7 +136,11 @@ section form input[type="submit"]:hover {
     }
 
     section h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
+    }
+
+    section form {
+        font-size: 2.5rem;
     }
 
 }
@@ -143,6 +163,15 @@ section form input[type="submit"]:hover {
     section form input, section form select, section form textarea {
         font-size: 1rem;
     }
+}
+
+/* Ispravka responzivnosti - MOBILNI */
+@media screen and (max-width: 425px) {
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* Galaxy Fold  */

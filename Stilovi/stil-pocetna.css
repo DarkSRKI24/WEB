@@ -28,8 +28,6 @@
 
 section {
     margin: 10rem auto;
-    row-gap: 2rem;
-    flex-wrap: wrap;
 }
 
 section h2 {
@@ -54,8 +52,7 @@ section video {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 2em;
-    gap: 2em;
+    gap: 2rem;
 }
 
 article {
@@ -85,7 +82,7 @@ article.item3 img {
     object-position: 20% 100%;
 }
 article.item4 img {
-    object-position: 45% 100%;
+    object-position: 47.5% 100%;
 }
 article.item5 img {
     object-position: 35% 100%;
@@ -102,7 +99,7 @@ article div.band-member {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    transition: 0.3s;
+    transition: 0.5s;
     overflow: auto;
 }
 
@@ -121,7 +118,7 @@ div.band-member a:hover {
 
 .band-member h3 {
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
-    font-size: 3.15rem;
+    font-size: 2.75rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
@@ -139,11 +136,11 @@ div.band-member a:hover {
     font-family: 'Montserrat', Montserrat-Offline, sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .band-member {
-    transition: text-decoration 0.3s;
+    transition: text-decoration 0.5s;
 }
 
 /* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
@@ -182,13 +179,17 @@ div.band-member a:hover {
     }
 
     .band-member h3{
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .band-member a {
-        font-size: 1.1rem;
+        font-size: 1rem; 
+        font-weight: bold;
     }
     
+    section h2 {
+        font-size: 4.5rem;
+    }
 }
 
 
