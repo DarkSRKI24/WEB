@@ -5,10 +5,10 @@
     background-color: #ffffff;
 }
 
-.wrapper-article:hover {
+/* .wrapper-article:hover {
     background-color: #000000;
     color: #ffffff;
-}
+} */
 
 .wrapper-article h3 {
     margin-bottom: 2rem;
@@ -21,6 +21,7 @@
     font-family: 'Oswald', Oswald-Offline, sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
+    display: inline-block;
 }
 
 .wrapper-img {
@@ -30,6 +31,54 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+.kontakt-ikonica {
+    display: flex;
+    align-items: center;
+}
+#tiktok-ikonica {
+    width: 5%;
+}
+#tiktok-teks {
+    margin-left: 7%;
+}
+.kontakt-ikonica svg{
+    width: 6%;
+}
+.kontakt-ikonica p {
+    margin-left: 6%;
+    font-size: 2rem;
+    color: #000000;
+}
+.ikonice-row-1, .ikonice-row-2 {
+    width: 50%;
+}
+.social-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+.wrapper-article h3:nth-last-child(2) {
+    margin-top: 2rem;
+}
+
 
 /* wrapper-sectaion nije isti kao section kod ostalih */
 .wrapper-section {
@@ -120,7 +169,7 @@
     }
 
     .wrapper-article h3 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
     }
 
@@ -133,7 +182,7 @@
 @media screen and (max-width: 425px) {
     
     .wrapper-article h3 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .wrapper-article p {

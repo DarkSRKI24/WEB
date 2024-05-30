@@ -1,46 +1,3 @@
-.gallery-gpt {
-    position: relative;
-    width: 100%;
-    height: auto; /* Adjust the height as needed */
-    overflow: hidden;
-    background-color: #000000;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    color: white;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-  
-
-
-
-/* END OF SLIDER */
-
 body {
     height: 100vh;
 }
@@ -61,12 +18,17 @@ section {
     width: 50%;
 }
 
-.gallery-gpt {
+.gallery {
     border: 0.25rem solid #000000;
     object-fit: cover;
 
     position: sticky;
     top: 27.5%;
+}
+
+.section-gallery img {
+    width: 100%;
+    display: block;
 }
 
 .section-form {
@@ -163,24 +125,13 @@ main .section-form form label:nth-child(2){
     background-color: #000000;
 }
 
-/* Ispravka responzivnosti - DESKTOP */
-@media screen and (max-width: 1439px) {
-
-    .section-gallery {
-        display: none;
-    }
-
-    .section-form h2 {
-        font-size: 4rem;
-    }
-
-    .section-form {
-        width: 100%;
-    }
-}
 
 /* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
 @media screen and (max-width: 1024px) {
+    
+    .section-form h2 {
+        font-size: 2.25rem;
+    }
 
     .section-form form {
         font-size: 3rem;
@@ -204,7 +155,7 @@ main .section-form form label:nth-child(2){
     }
 
     .section-form h2 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .section-form form {
@@ -217,36 +168,30 @@ main .section-form form label:nth-child(2){
 @media screen and (max-width: 425px) {
 
     .section-form h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .section-form form h3 {
-        font-size: 0.8rem;
+        font-size: 1.25rem;
     }
 
     .section-form form {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .section-form form input, .section-form form select, .section-form form textarea {
         font-size: 1rem;
-        margin-bottom: 1.5rem;
     }
-
-    main .section-form form h3 {
-        margin-top: 1rem;
-    }
-    
-    main .section-form form label:nth-child(2){ 
-        margin-top: 1.5rem;
-    }
-
-    .section-form {
-        margin: 2rem auto;
-    }
-    
 }
 
+/* Ispravka responzivnosti - MOBILNI */
+@media screen and (max-width: 425px) {
+
+    .section-form h2 {
+        font-size: 1.5rem;
+    }
+
+}
 
 /* Galaxy Fold  */
 @media screen and (max-width: 280px) {
@@ -258,10 +203,17 @@ main .section-form form label:nth-child(2){
     .section-form form input, .section-form form select, .section-form form textarea {
         font-size: 0.75rem;
     }
-    
 }
 
 
+/* Ispravka responzivnosti - DESKTOP */
+@media screen and (max-width: 1439px) {
 
+    .section-gallery {
+        display: none;
+    }
 
-
+     .section-form h2 {
+        font-size: 4rem;
+    }
+}

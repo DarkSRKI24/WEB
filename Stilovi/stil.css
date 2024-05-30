@@ -25,11 +25,15 @@ main {
 /* Fontovi */
 @font-face {
     font-family: Oswald-Offline;
-    src: url(Fontovi/Oswald-VariableFont_wght.ttf);
+    src: url(../Fontovi/Oswald-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: Montserrat-Offline;
-    src: url(Fontovi/Montserrat-VariableFont_wght.ttf);
+    src: url(../Fontovi/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: SHIRENS;
+    src: url(../Fontovi/SHIRENS.ttf);
 }
 
 
@@ -114,8 +118,8 @@ header nav {
 
 .nav-link {
     color: #000000;
-    font-family: 'Oswald', Oswald-Offline, sans-serif;
-    font-size: 1.75rem;
+    font-family: SHIRENS, 'Oswald', Oswald-Offline, sans-serif;
+    font-size: 1.25rem;
     font-weight: 300;
     cursor: pointer;
 }
@@ -137,8 +141,8 @@ header:hover {
     margin-right: auto;
     margin-left: 0.5rem;
     color: #000000;
-    font-family: 'Montserrat', Montserrat-Offline, sans-serif;
-    font-size: 2rem;
+    font-family: SHIRENS, 'Montserrat', Montserrat-Offline, sans-serif;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -216,19 +220,36 @@ footer {
 }
 
 
+@media screen and (max-width: 1200px) {
+
+    .nav-item {
+        margin-left: 1.75rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0.5rem;
+    }
+
+    .nav-item a {
+        padding: 0.25rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+ }
+
+
 /* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
 @media screen and (max-width: 1024px) { 
 
     .nav-logo span {
         width: 11rem;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     
-    .nav-link {
-        font-size: 1.35rem;
-        font-weight: 300;
-    }
-
     .nav-item {
         margin-left: 1rem;
     }
@@ -244,7 +265,24 @@ footer {
 }
 
 
+@media screen and (max-width: 900px) {
 
+    #logo {
+        width: 3rem;
+    }
+
+    .nav-logo span {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+
+
+}
 
 
 /* TABLET prikaz - HAMBURGER menu */
@@ -254,7 +292,7 @@ footer {
         display: block;
         position: fixed;
         right: -100%;
-        top: 5.25rem;
+        top: 4rem;
         bottom: 0;
         flex-direction: column;
         background-color: #fff;
@@ -305,7 +343,8 @@ footer {
     }
 
     .nav-link {
-        font-size: 2rem;
+        font-size: 1.25rem;
+        font-weight: 100;
         display: block;
     }
 
@@ -320,7 +359,7 @@ footer {
 @media screen and (max-width: 425px) {
 
     .nav-menu {
-        top: 4.15rem;
+        top: 3.8rem;
         height: calc(100%- 4.15rem);
     }
 
@@ -337,12 +376,20 @@ footer {
     }
 
     .nav-logo span {
-        width: 9rem;
-        font-size: 1.2rem;
+        width: 10rem;
+        font-size: 1rem;
     }
 
     #logo {
         width: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-item {
+        padding: 1rem 0;
     }
     
 }
@@ -350,12 +397,20 @@ footer {
 /* Galaxy Fold  */
 @media screen and (max-width: 280px) {
 
+    .nav-menu {
+        top: 3.5rem;
+    }
+
     .foot-item:first-child {
         font-size: 0.65rem;
     }
 
-    .nav-item {
-        padding: 2rem 0;
+    .nav-logo span {
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
     }
 
 }

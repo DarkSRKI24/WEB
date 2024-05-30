@@ -1,15 +1,16 @@
 #hero-image {
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
     display: block;
+
+    object-fit: cover;
+    object-position: 50% 20%;
 }
 
 #hero-logo {
     position: absolute;
-    width: 40%;
-    top: 57.5%;
+    width: 30vw;
+    top: 53%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -24,6 +25,8 @@
 #hero-banner {
     position: relative;
     border-bottom: 0.25rem solid #000000;
+    height: 95vh;
+    overflow: hidden;
 }
 
 section {
@@ -46,6 +49,7 @@ section video {
     box-sizing: content-box;
     z-index: 1;
     width: 60%;
+    background-color: #000000;
 }
 
 .flexbox-section {
@@ -128,6 +132,8 @@ div.band-member a:hover {
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 2rem;
+    /* margin: 1rem 0; */
+    min-height: 100px;
 }
 
 .band-member a {
@@ -143,8 +149,33 @@ div.band-member a:hover {
     transition: text-decoration 0.5s;
 }
 
+
+/* Large LAPTOP */
+@media screen and (max-width: 1440px) {
+
+    #hero-image {
+        object-position: 50% 50%;
+    }
+
+    #hero-logo {
+        width: 35vw;
+        top: 52%;
+    }
+}
+
+
 /* mali LAPTOP i cudni TABLETI(iPad Air, Surface Pro 7) */
 @media screen and (max-width: 1024px) {
+ 
+    #hero-image {
+        object-position: 50% 100%;
+    }
+
+    #hero-logo {
+        width: 40vw;
+        top: 52%;
+    }
+
     article {
         width: 24rem;
     }
@@ -157,6 +188,19 @@ div.band-member a:hover {
         font-size: 1.25rem;
     }
 
+}
+
+
+/* ZA BANNER */
+@media screen and (max-width: 900px) {
+
+    #hero-banner {
+        height: unset;
+    }
+
+    #hero-logo{
+        width: 40%;
+    }
 }
 
 /* TABLET prikaz */
@@ -188,7 +232,7 @@ div.band-member a:hover {
     }
     
     section h2 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 }
 
@@ -280,4 +324,13 @@ section form input[type="submit"]:hover {
     width: 90%;
     color: #ffffff;
     background-color: #000000;
+}
+
+
+@media screen and (min-width: 2560px) {
+
+    #hero-logo {
+        width: 35vw;
+        top: 53%;
+    }
 }

@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../Stilovi/stil-rezervacije.css">
-
     <title>BMTH</title>
 </head>
 <body>
@@ -45,24 +44,12 @@
     <main>
         <section>
             <div class="section-gallery">
-
-                <div class="gallery-gpt">
-                    <div class="slider">
-                      <img src="../Slike/BMTH_CONCERT_1.jpg" alt="Image 1">
-                      <img src="../Slike/BMTH_CONCERT_2.jpg" alt="Image 2">
-                      <img src="../Slike/BMTH_CONCERT_3.jpg" alt="Image 3">
-                      <img src="../Slike/BMTH_CONCERT_4.jpg" alt="Image 4">
-                      <img src="../Slike/BMTH_CONCERT_5.jpg" alt="Image 5">
-                      <img src="../Slike/BMTH_CONCERT_6.jpg" alt="Image 6">
-                      <img src="../Slike/BMTH_CONCERT_7.jpg" alt="Image 7">
-                    </div>
-                    <button class="prev-btn">&lt;</button>
-                    <button class="next-btn">&gt;</button>
-                  </div>
-                    
+                <div class="gallery">
+                    <img src="../Slike/BMTH_CONCERT_1.jpg" alt="Slika koncerta">
+                </div>
             </div>
             <div class="section-form">    
-                <h2>REZERVACIJA<br> KARATA</h2>
+                <h2>REZERVACIJA <br>KARATA</h2>
                 <form>
                 <h3>Ovde možete rezervisati karte za predstojeći koncert; <br>polja sa crvenom zvezdicom (<span> * </span>) su obavezna. </h3>
                 <label for="ime" id="selektujME">Ime</label>
@@ -126,40 +113,4 @@
     <script src="../Skripte/app.js"></script>
     </div>
 </body>
-
-<script>
-
-    const gallery = document.querySelector('.gallery-gpt');
-    const slider = gallery.querySelector('.slider');
-    const prevBtn = gallery.querySelector('.prev-btn');
-    const nextBtn = gallery.querySelector('.next-btn');
-    const images = slider.querySelectorAll('img');
-    let currentIndex = 0;
-
-    function goToSlide(index) {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    let slideInterval;
-
-    function goToNextSlide() {
-    clearInterval(slideInterval); // Clear the current interval
-    currentIndex = (currentIndex + 1) % images.length;
-    goToSlide(currentIndex);
-    slideInterval = setInterval(goToNextSlide, 3000); // Start a new interval after 3 seconds
-    }
-
-    function goToPrevSlide() {
-    clearInterval(slideInterval); // Clear the current interval
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    goToSlide(currentIndex);
-    slideInterval = setInterval(goToNextSlide, 3000); // Start a new interval after 3 seconds
-    }
-
-    nextBtn.addEventListener('click', goToNextSlide);
-    prevBtn.addEventListener('click', goToPrevSlide);
-
-    slideInterval = setInterval(goToNextSlide, 3000); // Start the initial interval
-
-</script>
 </html>

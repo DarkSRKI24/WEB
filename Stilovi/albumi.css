@@ -92,8 +92,9 @@ section h2 {
     overflow: visible;
 }
 
+
 /* dodatna responzivnost - DESKTOP */
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1600px) {
     .wrapper-section {
         width: 60rem;
     }
